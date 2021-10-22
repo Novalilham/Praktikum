@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Praktikum 2</title>
+</head>
+<body style="font-family: Arial;">
+    <form action="login.php" method="post">
+        <fieldset>
+            <h2>Black Goose Bistro | Pizza-on-Demand</h2>
+            <p>Our 12 "wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour</p>
+            <p>Your Information</p>
+              Name :<input type="text" name="username" size="35"/><br>
+              Address : <input type="text" name="Address" size="32"/><br>
+              Telephone Number : <input type="text" name="Telephon Number" size="20"/><br>
+              E-mail : <input type="email" name="E-mail" size="33"><br>
+              Delivery Instruction: <br>
+              <textarea name="Notes" cols="30" rows="8" maxlength="400"></textarea><br>
+              Design your dream pizza: <br>
+              Pizza specs <br>
+            <p>Crust(choose one)</p>
+                    <input type="radio" name="Crust"> Classic White<br>
+                    <input type="radio" name="Crust">Multigrain<br>
+                    <input type="radio" name="Crust">Cheese-stuffed crust<br>
+                    <input type="radio" name="Crust">Gluten Free<br> 
+            <p>Toppings (choose as many as you want</p>
+                    <input type="checkbox" name="Toppings" id="Toppings1">
+                    <label for="Toppings1">Red Sauce</label><br>
+                    <input type="checkbox" name="Toppings" id="Toppings2">
+                    <label for="Toppings2">White Sauce</label><br>
+                    <input type="checkbox" name="Toppings" id="Toppings3">
+                    <label for="Toppings3">Mozarella Cheese</label><br>
+                    <input type="checkbox" name="Toppings" id="Toppings4">
+                    <label for="Toppings4">Pepperoni</label><br>
+                    <input type="checkbox" name="Toppings" id="Toppings5">
+                    <label for="Toppings5">Mushrooms</label><br>
+                    <input type="checkbox" name="Toppings" id="Toppings6">
+                    <label for="Toppings6">Peppers</label><br>
+                    <input type="checkbox" name="Toppings" id="Toppings7">
+                    <label for="Toppings7">Anchoives</label><br>  
+            <p>Number</p>How many Pizzas : <input type="text" name="Number" size="1">
+            <p><input type="submit" value="Bring me a pizza!"><input type="reset"></p>
+        </fieldset>
+    </form>
+</body>
+</html>
