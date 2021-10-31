@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Pesanan Barang</title>
+    <style>
+        body {background-color: rgb(168, 168, 180);}
+        div {
+            width: 1800px;
+            height: 35px;
+        }
+        .garis_tepi1 {
+            border: 2px solid black;
+        }
+        .resizedTextBox {width: 260px; height: 70px;}
+        .resizedTextBox2 {width: 50px; height: 15px;}
+    </style>
+</head>
+<body>
+    <form action="login.php" method="post">
+        <nav style="display: flex; justify-content: space-between; align-items: center; width: 95%; margin: 0 auto; padding: 30px 0;">
+            <div style="display: flex; align-items: center;" class="garis_tepi1">
+                <ul style="display: flex; align-items: center; list-style: none; padding: 0px;">
+                    <li><a href="#" style="margin: 100px;">Home</a>|</li>
+                    <li><a href="#" style="margin: 100px;">Generate Link</a>|</li>
+                    <li><a href="#" style="margin: 100px;">Transaction History</a>|</li>
+                    <li><a href="#" style="margin: 100px;">Policy</a>|</li>
+                    <li><a href="#" style="margin: 100px;">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div style="margin-left: 50px;">
+            <img src="assets/asus.jpg" alt="Laptop" width="250" height="250">
+        </div>
+        <ul style="margin-left: 300px; list-style: none;">
+            <li>Title Here :<input type="text" name="Title" size="35" style="margin-left : 60px; margin-bottom: 10px;"></li>
+            <li>Description : <input type="text" name="Description" style="margin-left: 49px; margin-bottom: 10px;" class="resizedTextBox"></li>
+            <li>Account Number : <input type="text" name="Account Number" size="35" style="margin-left: 10px; margin-bottom: 10px;"></li>
+            <li>Bank : <input type="text" name="Bank" list="Bank" style="margin-left: 100px; margin-bottom: 10px;">
+                <datalist id="Bank">
+                    <option value="BCA"></option>
+                    <option value="BNI"></option>
+                    <option value="BRI"></option>
+                </datalist></li>
+            <li>Account Holder : <input type="text" name="Account Holder" size="35" style="margin-left: 20px; margin-bottom: 10px;"></li>
+            <li>Transaction : <input type="Number" name="Transaction" list="Transaction" style="margin-left: 50px; margin-bottom: 10px;" class="resizedTextBox2">
+                <datalist id="Transaction">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                </datalist></li>
+            <li style="margin-left: 150px; margin-bottom: 10px;">* if the transaction is for 3 person, choose 3 from the drop-down list</li>
+            <li style="margin-left: 150px;"><input type="checkbox" name="Send" id="Send1"><label for="Send1">Send To Mobile Phone</label></li>
+            <li style="margin-left: 150px;"><input type="checkbox" name="Send" id="Send2"><label for="Send2">Send To Email</label></li>
+            <li>Send To Mobile Phone : <input type="text" name="Send To Mobile Phone" size="31" style="margin-bottom: 10px;"></li>
+            <li>Send To Email : <input type="text" name="Send To Email" size="35" style="margin-left: 30px; margin-bottom: 10px;"></li>
+            <li><input type="submit" value="Generate Order Link" style="margin-left: 150px; background-color: rgb(8, 151, 8);"></li>
+        </ul>
+            
+    </form>
+</body>
+</html>
